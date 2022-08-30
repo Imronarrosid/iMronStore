@@ -5,24 +5,38 @@ header, section, footer, aside, article, figure, figcaption {
 				display: block;}
 			body {
 			  margin: 0;
-
+        background-color: #dcf763;
 			  font-family: 'Rubik', sans-serif;
 				color: #666666;
-				height: 130%;
-				margin: 0px;}
+				height: 100vh;
+				}
 			.wrapper {
 
-			 margin-top: 0px;
-			  
+			 margin: 0;
+			 
 				
 				border: 0px solid #000000;
 				background-color: #ffffff;}
+				.navbar-brand {
+				  padding:6px 20px 6px ;
+				  color: white;
+				  font-weight: 600;
+				  border: none;
+				  background-color: transparent;
+				  border-radius: 16%/50%;
+				}
+				.navbar-light .navbar-brand{
+				  color: #435058;
+				}
       nav {
-        margin-top:-22px;
+        top: 0;
+        
         display: flex;
-        position: absolute;
+        position:fixed;
       }
-			
+			.navbar-light{
+			  background-color:  #bfb7b6!important;
+			}
 			footer {
 			  text-align: center;
 			 width: 100%;
@@ -31,6 +45,7 @@ header, section, footer, aside, article, figure, figcaption {
 				clear: both;
 				color: #ffffff;
 				background-color: #aeaca8;
+				
 				}
 			nav ul {
 				margin: 0px;
@@ -44,9 +59,9 @@ header, section, footer, aside, article, figure, figcaption {
 				color: #000000;}
 				
 			.hero{
-			  
+			  background-color: #bfb7b6;
 			  text-align: center;
-			  height: 90vh;
+			  height: 100vh;
 			  display: flex;
 			  flex-flow: column;
 			  justify-content: center;
@@ -70,7 +85,7 @@ header, section, footer, aside, article, figure, figcaption {
         margin: 0 auto;
 			}
 			section.courses {
-				
+			
 				width: 100%;
 				border-right: 0px solid #eeeeee;}
 			article {
@@ -171,6 +186,9 @@ header, section, footer, aside, article, figure, figcaption {
 				padding: 7px 0px 0px 20px;}
 				
 				@media only screen and (min-width: 600px) {
+				  nav {
+				    position: fixed;
+				  }
   section.courses {
 				float: left;
 				width: 73%;
@@ -207,9 +225,11 @@ img{
 				  
 				  display: flex;
 				  flex-direction: row;
+				  align-items: center;
 				  justify-content: space-around;
-				  margin:10%;
-				  max-height: 300px;
+				  margin:0;
+				  height: 100vh;
+				  max-height: 600px;
 				}
 				.herocaps{
 				  text-align: left;
